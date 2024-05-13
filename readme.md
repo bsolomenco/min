@@ -1,6 +1,6 @@
 # Create
-`git submodule add https://github.com/xmrig/xmrig.git xmrig/rep`
-`git config -f .gitmodules submodule.xmrig.branch master`
+- `git submodule add https://github.com/xmrig/xmrig.git xmrig/rep`
+- `git config -f .gitmodules submodule.xmrig.branch master`
 
 # Clone
 - `mkdir min && cd min`
@@ -20,6 +20,6 @@
 - `git apply patch.dif`
 
 # xmrig
-- rep               : original repository
-- xmrig_bld.sh      : build script
-- cpu_unMineable.sh : start mining (sudo)
+- rep                           : original repository
+- xmrig_bld.sh                  : build script
+- `sudo ./cpu_unMineable.sh`    : start mining
