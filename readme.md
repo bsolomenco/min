@@ -23,3 +23,21 @@
 - rep                           : original repository
 - xmrig_bld.sh                  : build script
 - `sudo ./cpu_unMineable.sh`    : start mining
+
+# Autostart
+- force autologin
+    - GUI ...
+    - `sudo nano /etc/gdm3/custom.conf`
+- ~/.config/autostart/xmrig.desktop
+```
+[Desktop Entry]
+Type=Application
+Exec=gnome-terminal --command "sudo /home/s/min/xmrig/cpu_unMineable.sh"
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=xmrig
+Name=xmrig
+Comment[en_US]=
+Comment=
+```

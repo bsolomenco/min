@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=gnome-terminal --command "sudo /home/s/min/xmrig/cpu_unMineable.sh"
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=xmrig
+Name=xmrig
+Comment[en_US]=
+Comment=
