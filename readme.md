@@ -20,25 +20,21 @@
 - `git apply patch.dif`
 
 # xmrig
-- rep                           : original repository
 - `sudo apt install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev`
-- xmrig_bld.sh                  : build script
-- `sudo ./cpu_unMineable.sh`    : start mining
+- rep                           # original repository
+- `pushd rep && git apply ../donate0.diff && popd`
+- `./bld.sh`                    # build script
+- `sudo ./cpu_unMineable.sh`    # start mining
 
 # Autostart
 - force autologin
-    - GUI ...
-    - `sudo nano /etc/gdm3/custom.conf`
-- ~/.config/autostart/xmrig.desktop
-```
-[Desktop Entry]
-Type=Application
-Exec=gnome-terminal --command "sudo /home/s/min/xmrig/cpu_unMineable.sh"
-Hidden=false
-NoDisplay=false
-X-GNOME-Autostart-enabled=true
-Name[en_US]=xmrig
-Name=xmrig
-Comment[en_US]=
-Comment=
-```
+    - solution 1: GUI ...
+    - solution 2: `sudo nano /etc/gdm3/custom.conf`
+- autostart app
+    - `mkdir -p ~/.config/autostart/`
+    - `cp xmrig/xmrig.desktop ~/.config/autostart`
+- no sudo password
+    - `sudo visudo`
+    - add: `user ALL=(ALL) NOPASSWD: /path/to/script.sh`
+        - example (for user `s`): `s ALL=(ALL) NOPASSWD: /home/s/min/xmrig/cpu_unMineable.sh`
+
