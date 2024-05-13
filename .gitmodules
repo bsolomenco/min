@@ -1,0 +1,3 @@
+[submodule "xmrig/rep"]
+	path = xmrig/rep
+	url = https://github.com/xmrig/xmrig.git
