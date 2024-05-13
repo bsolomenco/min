@@ -1,5 +1,7 @@
 #!/bin/bash -ev
 
-rm -rf bld
-cmake -S rep -B bld -D"CMAKE_INSTALL_PREFIX=."
-cmake --build bld --parallel $(nproc)
+scriptDir=$(dirname "${BASH_SOURCE[0]}")
+
+rm -rf "${scriptDir}/bld"
+cmake -S "${scriptDir}/rep" -B "${scriptDir}/bld" -D"CMAKE_INSTALL_PREFIX=${scriptDir}"
+cmake --build "${scriptDir}/bld" --parallel $(nproc)
