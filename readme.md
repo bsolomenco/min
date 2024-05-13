@@ -21,6 +21,7 @@
 
 # xmrig
 - rep                           : original repository
+- `sudo apt install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev`
 - xmrig_bld.sh                  : build script
 - `sudo ./cpu_unMineable.sh`    : start mining
 
