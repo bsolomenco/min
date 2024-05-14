@@ -1,0 +1,8 @@
+#!/bin/bash -e
+
+scriptPath=$(dirname "${BASH_SOURCE[0]}")   #get path of the script
+scriptDir="${scriptPath##*/}"               #get folder name
+echo "scriptPath=${scriptPath}    scriptDir=${scriptDir}"
+
+echo ${scriptPath}/bin/miniZ --par 144,5 --pers BgoldPoW --url LTC:ltc1qshmk2u694y60dg4guvn4saxkpkc9jzxq2dwu59.$(uname -n)_${scriptDir}#0yr0-ywoq@zhash-eu.unmineable.com:13333 --log --extra
+${scriptPath}/bin/miniZ --par 144,5 --pers BgoldPoW --url LTC:ltc1qshmk2u694y60dg4guvn4saxkpkc9jzxq2dwu59.$(uname -n)_${scriptDir}#0yr0-ywoq@zhash-eu.unmineable.com:13333 --log --extra
