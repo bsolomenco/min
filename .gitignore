@@ -1,3 +1,4 @@
 bld
+.bld*
 gminer/bin
 miniz/bin
