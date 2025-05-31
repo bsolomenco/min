@@ -1,5 +1,6 @@
 # Create
-- `git submodule add https://github.com/xmrig/xmrig.git xmrig/rep`
+- `git submodule add https://github.com/xmrig/xmrig.git xmrig/xmrig`
+- `git submodule add https://github.com/xmrig/xmrig-cuda.git xmrig/cuda`
 - `git config -f .gitmodules submodule.xmrig.branch master`
 
 # Clone
