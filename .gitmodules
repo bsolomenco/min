@@ -1,3 +1,6 @@
 [submodule "xmrig/rep"]
 	path = xmrig/rep
 	url = https://github.com/xmrig/xmrig.git
+[submodule "xmrig/cuda"]
+	path = xmrig/cuda
+	url = https://github.com/xmrig/xmrig-cuda.git
