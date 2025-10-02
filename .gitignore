@@ -2,3 +2,4 @@ bld
 .bld*
 gminer/bin
 miniz/bin
+xmrig/xmrig
