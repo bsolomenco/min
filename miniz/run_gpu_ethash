@@ -1,0 +1,8 @@
+#!/bin/bash -e
+
+scriptPath=$(dirname "${BASH_SOURCE[0]}")   #get path of the script
+scriptDir="${scriptPath##*/}"               #get folder name
+echo "scriptPath=${scriptPath}    scriptDir=${scriptDir}"
+
+echo ${scriptPath}/bin/miniZ --par ethash --url ssl://LTC:ltc1qshmk2u694y60dg4guvn4saxkpkc9jzxq2dwu59.$(uname -n)_${scriptDir}#bgms-z7ys@ethash-eu.unmineable.com:4444 --log --extra --profit --show-solratio --latency --show-mode --oc2
+${scriptPath}/bin/miniZ --par ethash --url ssl://LTC:ltc1qshmk2u694y60dg4guvn4saxkpkc9jzxq2dwu59.$(uname -n)_${scriptDir}#bgms-z7ys@ethash-eu.unmineable.com:4444 --log --extra --profit --show-solratio --latency --show-mode --oc2
