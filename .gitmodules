@@ -4,3 +4,6 @@
 [submodule "xmrig/cuda"]
 	path = xmrig/cuda
 	url = https://github.com/xmrig/xmrig-cuda.git
+[submodule "xmrig/deps"]
+	path = xmrig/deps
+	url = https://github.com/xmrig/xmrig-deps
