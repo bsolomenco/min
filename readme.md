@@ -1,6 +1,7 @@
 # Create
 - `git submodule add https://github.com/xmrig/xmrig.git xmrig/xmrig`
 - `git submodule add https://github.com/xmrig/xmrig-cuda.git xmrig/cuda`
+- `git submodule add https://github.com/xmrig/xmrig-deps xmrig/deps`
 - `git config -f .gitmodules submodule.xmrig.branch master`
 
 # Clone
@@ -38,4 +39,3 @@
     - `sudo visudo`
     - add: `user ALL=(ALL) NOPASSWD: /path/to/script.sh`
         - example (for user `s`): `s ALL=(ALL) NOPASSWD: /home/s/min/xmrig/cpu_unMineable.sh`
-
